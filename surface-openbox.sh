@@ -52,7 +52,7 @@ cp /scripts/surface_rotate.sh ~/.config/openbox/scripts/
 
 echo "==>Installing touchscreen dependencies.."
 # touchscreen config
-sudo apt install -y git build-essential meson dkms libssl-dev libsdl2-dev libcurl4-openssl-dev libCLI11-dev libeigen3-dev libfmt-dev libinih-dev glslc libgsl-dev libspdlog-dev cmake make autoconf automake libcairomm-1.16-dev gcc g++ 
+sudo apt install -y git build-essential meson dkms libssl-dev libsdl2-dev libcurl4-openssl-dev libli11-dev libeigen3-dev libfmt-dev libinih-dev glslc libgsl-dev libspdlog-dev cmake make autoconf automake libcairomm-1.16-dev gcc g++ 
 
 
 echo "check documentation for service configuraton"
