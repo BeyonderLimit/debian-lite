@@ -54,4 +54,4 @@ packages=(
 
 
 sudo apt-get update
-sudo apt-get install --no-install-recommends "${packages[@]}"
+sudo apt-get install --no-install-recommends "${packages[@]}" -y
