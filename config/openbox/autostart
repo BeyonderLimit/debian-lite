@@ -8,3 +8,5 @@ tint2 &
 
 # Initialize gesture processing daemon
 touchegg &
+
+sudo powertop --auto-tune &
