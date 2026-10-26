@@ -9,7 +9,7 @@ mkdir -p ~/.config/tint2
 cd ~/debian-lite/
 cp config/openbox/rc.xml ~/.config/openbox/
 cp config/tint2/tint2rc ~/.config/tint2/
-cp config/openbox/autostart ~/.config/openbox/dg/
+cp config/openbox/autostart ~/.config/openbox/
 
 
 sudo apt install --no-install-recommends alsa-utils brightnessctl volumeicon-alsa -y
