@@ -9,7 +9,7 @@ tint2 &
 # Initialize gesture processing daemon
 touchegg &
 
-sudo powertop --auto-tune &
+# sudo powertop --auto-tune &
 
 # Start background accelerometer rotation monitoring pipeline
 ~/.config/openbox/scripts/surface_rotate.sh &
