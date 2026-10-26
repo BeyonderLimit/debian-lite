@@ -5,3 +5,6 @@ picom --vsync &
 
 (sleep 2 && feh --bg-scale '/home/sam/Pictures/splash-2554587178.png') &
 tint2 &
+
+# Initialize gesture processing daemon
+touchegg &
