@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+nu#!/usr/bin/env bash
 set -Eeuo pipefail
 
 ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
@@ -26,6 +26,7 @@ packages=(
     featherpad
     rofi
     dunst
+    jgmenu
     picom
     feh
     lxappearance
