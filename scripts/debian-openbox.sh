@@ -4,8 +4,7 @@ set -Eeuo pipefail
 ROOT="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 source "$ROOT/scripts/common.sh"
 
-require_user
-require_debian12
+
 
 if dpkg-query -W -f='${Status}' pipewire-pulse 2>/dev/null |
     grep -q 'install ok installed'; then
@@ -38,6 +37,9 @@ packages=(
     pulseaudio
     pulseaudio-utils
     alsa-utils
+    network-manager
+    network-manager-gnome
+    nm-tray
     onboard
     xinput
     python3
@@ -50,6 +52,6 @@ packages=(
     fonts-jetbrains-mono
 )
 
-log "Installing desktop packages"
+
 sudo apt-get update
 sudo apt-get install --no-install-recommends "${packages[@]}"
