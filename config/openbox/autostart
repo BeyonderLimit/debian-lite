@@ -1,4 +1,7 @@
 xrandr --output eDP-1 --scale 0.65x0.65 &
-picom &
-(sleep 2 && feh --bg-fill '/home/sam/Pictures/splash-2554587178.png') &
+
+# Start the compositor for anti-tearing
+picom --vsync &
+
+(sleep 2 && feh --bg-scale '/home/sam/Pictures/splash-2554587178.png') &
 tint2 &
