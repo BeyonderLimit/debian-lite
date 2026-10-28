@@ -1,0 +1,11 @@
+#!/bin/bash 
+
+picom  &
+tint2 &
+dunst -config ~/.config/dunst/dunstrc &
+# redshift-gtk &
+#flameshot &
+nm-tray &
+xfce4-power-manager &
+# plank & 
+volumeicon-alsa &
