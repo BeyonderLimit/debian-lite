@@ -24,12 +24,11 @@ apt install -y --no-install-recommends \
     dunst mpv \
     rofi \
     kitty fish zsh \
-    rox-piler \
     feh \
     volumeicon-alsa alsa-utils pavucontrol \
     pulseaudio \    
-    nitrogen \
-    xbacklight pcmanfm lxappearance lxpanel gmrun xfce4-terminal \
+    
+apt install -y --no-install-recommends nitrogen  xbacklight pcmanfm lxappearance lxpanel gmrun xfce4-terminal \
     brightnessctl gvfs lxterminal mpv network-manager network-manager-gnome nm-tray \
     adwaita-qt \
     qt5ct fonts-quicksand fonts-jetbrains-mono fonts-hack fonts-cantarell paper-icon-theme papirus-icon-theme moka-icon-theme greybird-gtk-theme featherpad
