@@ -14,8 +14,7 @@ chown $SUDO_USER:$SUDO_USER /home/$SUDO_USER/.xsessionrc
 apt install -y --no-install-recommends \
     xinit \
     xorg \
-    openbox \
-    menu plank arc-theme \
+    openbox menu plank arc-theme \
     obconf \
     conky \
     jgmenu \
