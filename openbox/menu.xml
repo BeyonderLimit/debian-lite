@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu
+    xmlns="http://openbox.org/"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://openbox.org/
+    file:///usr/share/openbox/menu.xsd">
+    <menu id="root-menu" label="Openbox 3">
+        <item label="Terminal" icon="/usr/share/icons/papirus-antix/48x48/apps/terminal.png">
+            <action name="Execute">
+                <execute>desktop-defaults-run -t</execute>
+            </action>
+        </item>
+        <item label="File Manager" icon="/usr/share/icons/papirus-antix/48x48/apps/file-manager.png">
+            <action name="Execute">
+                <execute>desktop-defaults-run -fm</execute>
+            </action>
+        </item>
+        <item label="Web Browser" icon="/usr/share/icons/papirus-antix/48x48/apps/web-browser.png">
+            <action name="Execute">
+                <execute>desktop-defaults-run -b</execute>
+            </action>
+        </item>
+        <separator />
+        <item label="Editor" icon="/usr/share/icons/papirus-antix/48x48/apps/text-editor.png">
+            <action name="Execute">
+                <execute>desktop-defaults-run -te</execute>
+            </action>
+        </item>
+        <item label="App Select" icon="/usr/share/icons/papirus-antix/48x48/apps/gnome-searchtool.png">
+            <action name="Execute">
+                <execute>/usr/local/bin/app-select</execute>
+            </action>
+        </item>
+        <separator />
+        <menu execute="openbox-menu lxde-applications.menu" id="apps" label="Applications" icon="/usr/share/icons/papirus-antix/48x48/apps/applications.png"/>
+        <menu id="desktop" label="Desktop" icon="/usr/share/icons/papirus-antix/48x48/apps/user-desktop.png">
+            <menu id="client-list-menu" icon="/usr/share/icons/papirus-antix/48x48/apps/user-desktop.png"/>
+            <menu id="otherdesktop" label="Other Desktop" icon="/usr/share/icons/papirus-antix/48x48/apps/user-desktop.png" >
+		<item label="Minimal-Fluxbox">
+                    <action name="Execute">
+                        <execute>/usr/local/lib/desktop-session/desktop-session-restart Minimal-Fluxbox</execute>
+                    </action>  
+                </item>
+		<item label="Fluxbox">
+                    <action name="Execute">
+                        <execute>/usr/local/lib/desktop-session/desktop-session-restart Fluxbox</execute>
+                    </action>  
+                </item>
+		<item label="Minimal-IceWM">
+                    <action name="Execute">
+                        <execute>/usr/local/lib/desktop-session/desktop-session-restart Minimal-IceWM</execute>
+                    </action>  
+                </item>
+		<item label="IceWM">
+                    <action name="Execute">
+                        <execute>/usr/local/lib/desktop-session/desktop-session-restart IceWM</execute>
+                    </action>  
+                </item>
+		<item label="Minimal-JWM">
+                    <action name="Execute">
+                        <execute>/usr/local/lib/desktop-session/desktop-session-restart Minimal-Jwm</execute>
+                    </action>  
+                </item>
+		<item label="JWM">
+                    <action name="Execute">
+                        <execute>/usr/local/lib/desktop-session/desktop-session-restart Jwm</execute>
+                    </action>  
+                </item>
+		<item label="Openbox">
+                    <action name="Execute">
+                        <execute>/usr/local/lib/desktop-session/desktop-session-restart Openbox</execute>
+                    </action>  
+                </item>
+                <item label="App Desktop">
+                   <action name="Execute">
+                       <execute>/usr/local/lib/desktop-session/desktop-session-menu-window ignore-settings</execute>
+                   </action>
+                </item>
+            </menu>
+            <item label="RoxPanel on/off" icon="/usr/share/icons/papirus-antix/48x48/apps/rox-panel.png">
+                <action name="Execute">
+                    <execute>paneltoggle.sh</execute>
+                </action>
+            </item>
+            <item label="Conky on/off" icon="/usr/share/icons/papirus-antix/48x48/apps/conky-on-off.png">
+                <action name="Execute">
+                    <execute>conkytoggle.sh</execute>
+                </action>
+            </item>
+        </menu>
+        <separator />
+        <item label="App Killer" icon="/usr/share/icons/papirus-antix/48x48/apps/appkill.png">
+            <action name="Execute">
+                <execute>xkill</execute>
+            </action>        
+        </item>
+        <separator />  
+        <item label="Mount Disk" icon="/usr/share/icons/papirus-antix/48x48/apps/disk-manager.png">
+            <action name="Execute">
+                <execute>su-to-root -X -c /usr/sbin/disk-manager</execute>
+            </action>
+        </item>                 
+        <item label="Control Centre" icon="/usr/share/icons/papirus-antix/48x48/apps/control-center2.png">
+            <action name="Execute">
+                <execute>antixcc.sh</execute>
+            </action>
+        </item>
+        <separator />
+        <menu id="openbox" label="Openbox Settings" icon="/usr/share/icons/papirus-antix/48x48/apps/obconf.png">
+            <item label="Refresh Menu" icon="/usr/share/icons/papirus-antix/48x48/apps/update-manager.png">
+                <action name="Reconfigure" />
+            </item>
+            <item label="Restar Openbox" icon="/usr/share/icons/papirus-antix/48x48/apps/system-restart.png">
+                <action name="Restart" />
+            </item>
+            <item label="Openbox Config" icon="/usr/share/icons/papirus-antix/48x48/apps/obconf.png">
+                <action name="Execute">
+                    <execute>obconf</execute>
+                </action>
+            </item>
+        </menu> 
+        <separator />
+        <item label="Run" icon="/usr/share/icons/papirus-antix/48x48/apps/gnome-run.png">
+            <action name="Execute">
+                <execute>gexec</execute>
+            </action>
+        </item>
+        <item label="Exit" icon="/usr/share/icons/papirus-antix/48x48/apps/application-exit.png">
+            <action name="Execute">
+                <execute>desktop-session-exit</execute>
+            </action>
+        </item>
+    </menu>
+</openbox_menu>
+
