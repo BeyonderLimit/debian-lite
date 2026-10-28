@@ -1,7 +1,11 @@
 #!/bin/bash 
-
+# Launch Xcomppmgr and tint2 with openbox
+if which tint2 >/dev/null 2>&1; then
+  (sleep 2 && xcompmgr) &
+  (sleep 2 && tint2) &
+fi
 picom  &
-tint2 &
+# tint2 &
 dunst -config ~/.config/dunst/dunstrc &
 # redshift-gtk &
 #flameshot &
