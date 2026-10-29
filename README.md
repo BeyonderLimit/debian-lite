@@ -1,6 +1,6 @@
 # Debian Lite
 
-Interactive Debian/Openbox build-out launcher for the existing scripts in this repository.
+Interactive Debian/Openbox build-out launcher for the existing scripts in this repository. a more detail [HOWTO](HOWTO.md)
 
 ## Quick start from a TTY
 
