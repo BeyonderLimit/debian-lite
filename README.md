@@ -1,6 +1,6 @@
 # Debian Lite
 
-Interactive Debian/Openbox build-out launcher for the existing scripts in this repository. a more detail [HOWTO](HOWTO.md)
+Interactive Debian/Openbox build-out launcher for the existing scripts in this repository. a more detail [HOWTO](HOWTO.md), and Diagnosing and fixing Wifi issues [Wifi-Readme](WIFI-README.md)
 
 ## Quick start from a TTY
 
