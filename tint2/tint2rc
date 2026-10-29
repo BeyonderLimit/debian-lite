@@ -110,18 +110,15 @@ background_color_pressed = #000000 60
 border_color_pressed = #000000 30
 
 # Background 8: Launcher
-rounded = 0
-border_width = 2
-border_sides = 
-border_content_tint_weight = 0
-background_content_tint_weight = 0
-background_color = #1e1e2e 100
-border_color = #eba0ac 100
-gradient_id = 0
-background_color_hover = #000000 60
-border_color_hover = #000000 30
-background_color_pressed = #000000 60
-border_color_pressed = #000000 30
+launcher_padding = 2 4 2
+launcher_background_id = 0
+launcher_icon_background_id = 0
+launcher_icon_size = 24
+launcher_icon_asb = 100 0 0
+launcher_icon_theme_override = 0
+startup_notifications = 1
+launcher_tooltip = 1
+launcher_item_app = /usr/share/applications/jgmenu.desktop
 
 #-------------------------------------
 # Panel
