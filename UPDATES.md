@@ -1,9 +1,10 @@
+# Kernel Upgrading
 
-Yes—but the safe approach is to detect the system architecture and use Debian’s kernel **metapackages**, rather than hard-coding a kernel version. For a typical 64-bit Intel/AMD PC, these are `linux-image-amd64` and `linux-headers-amd64`; they track Debian’s kernel and corresponding headers. [packages.debian](https://packages.debian.org/bookworm-backports/linux-image-amd64)
+The Aim is to detect the system architecture and use Debian’s kernel **metapackages**, rather than hard-coding a kernel version. For a typical 64-bit Intel/AMD PC, these are `linux-image-amd64` and `linux-headers-amd64`; they track Debian’s kernel and corresponding headers. [packages.debian](https://packages.debian.org/bookworm-backports/linux-image-amd64)
 
 There is an important limitation: scanning hardware cannot guarantee that a newer kernel will work correctly. Package selection and dependency checks do not prove that Wi-Fi, graphics, suspend, storage, or third-party drivers will function after reboot. Debian also cautions that backports receive less extensive testing than stable packages. [backports.debian](https://backports.debian.org/Instructions/)
 
-## Recommended replacement
+## Recorded Placement
 
 Keep kernel upgrades separate from desktop installation and theming. This script:
 
