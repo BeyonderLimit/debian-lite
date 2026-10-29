@@ -212,16 +212,16 @@ launcher_background_id = 8
 launcher_icon_background_id = 0
 launcher_icon_size = 30
 launcher_icon_asb = 100 0 0
-launcher_icon_theme = Tela-circle-dark
+launcher_icon_theme = ePapirus-Dark
 launcher_icon_theme_override = 0
 startup_notifications = 1
 launcher_tooltip = 0
-launcher_item_app = /usr/share/applications/brave-browser-nightly.desktop
-launcher_item_app = /usr/share/applications/xfce4-file-manager.desktop
-launcher_item_app = /usr/share/applications/kitty.desktop
-launcher_item_app = /usr/share/applications/sublime_text.desktop
-launcher_item_app = /usr/share/applications/telegramdesktop.desktop
-launcher_item_app = /usr/share/applications/wps-office-prometheus.desktop
+launcher_item_app = /usr/share/applications/jgmenu.desktop
+launcher_item_app = /usr/share/applications/firefox-esr.desktop
+launcher_item_app = /usr/share/applications/featherpad.desktop
+launcher_item_app = /usr/share/applications/xfce4-terminal.desktop
+launcher_item_app = /usr/share/applications/pcmanfm.desktop
+
 
 #-------------------------------------
 # Clock
